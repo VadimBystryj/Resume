@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Vadzim Bystrou">
+    <title>Document</title>
+    <link rel="stylesheet" href="font-awesome/fonts/">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+    <header class="clearfix">
+        <div class="w">
+            <div id="info">
+                <h1>Vadzim Bystrou</h1>
+                <h3>Gdansk, Poland</h3>
+                <h3>Возраст: 35 лет</h3>
+            </div>
+            <div id="photo">
+                <img src="images/photo1.jpg" alt="Vadzim resume photo avatar" itemprop="image"/>
+            </div>
+        </div>    
+    </header>
+    <section id="info">
+        <div class="left-side">
+            <div id="expirience">
+                <button type="button" class="collapsible" title="Щелкните, чтобы открыть">Опыт работы</button>
+                <p>Уже почти год как я обучаюсь в онлайн-школе <a href="https://skillfactory.ru/">Skillfactory</a></p>
+            </div>
+            <div id="education">
+                <button type="button" class="collapsible" title="Щелкните, чтобы открыть">Образование</button>
+                <div class="content">
+                    <p>Fullstack Разработчик в онлайн-школе <a href="https://skillfactory.ru/">Skillfactory</a></p>
+                </div>
+            </div>
+            <div id="About-me">
+                <button type="button" class="collapsible" title="Щелкните, чтобы открыть">О себе</button>
+                <p>В 35 лет я решил изменить свою профессию и в этом мне помогает онлайн-школа <a href="https://skillfactory.ru/">Skillfactory</a></p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div id="contacts">
+                <button type="button" class="collapsible" title="Щелкните, чтобы открыть">Контакты</button>
+                <ul>
+                    <li id="phone"><i class="fa fa-phone"></i> +48660238123</li>
+                    <li id="instagram"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/vadimbystroff/"> instagram</a></li>
+                    <li id="mail"><i class="fa-solid fa-envelope"></i> vadimbystryj@gmail.com</li>
+                    <li id="git"><i class="fa-brands fa-github"></i><a href="https://github.com/VadimBystryj"> GitHub</a></li>
+                </ul>
+            </div>
+            <div id="language">
+                <button type="button" class="collapsible" title="Щелкните, чтобы открыть">Языки</button>
+                <ul>
+                    <li>Русский - родной</li>
+                    <li>Польский - B2</li>
+                    <li>Английский - B1</li>
+                </ul>
+            </div>
+            <div id="attainments">
+                <button type="button" class="collapsible" title="Щелкните, чтобы открыть">Навыки</button>
+                <ul>
+                    <li>
+                        <div class="container">
+                          <div class="skills html"> HTML 65%</div>
+                        </div></li>
+                    <li>
+                        <div class="container">
+                            <div class="skills javascript"><i class="fa-brands fa-js"></i> JavaScript 65%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="skills python"><i class="fa-brands fa-python"></i> Python 65%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="skills django"> Django 50%</div>
+                        </div>
+                    </li>
+                    <li><div class="container">
+                            <div class="skills sql"><i class="fa-brands fa-database"></i> SQL 50%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {    
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>  
+<script src="https://kit.fontawesome.com/b01a7803cd.js" crossorigin="anonymous"></script>      
+</body>
+</html>
